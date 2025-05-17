@@ -13,4 +13,8 @@ public class Helper {
         }
         return false;
     }
+    public static boolean isValidEmail(){
+
+        throw new UnsupportedOperationException();
+    }
 }

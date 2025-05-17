@@ -11,7 +11,9 @@ public class BookingFactory {
     if (Helper.isNullorEmpty(bookingID) || Helper.isZeroOrNull(customerID) || Helper.isZeroOrNull(ticketID) || Helper.isNullorEmpty(status))
         return null;
 
-    return new Booking.Builder().setBookingID(bookingID).setCustomerID(customerID).setTicketID(ticketID).setBookingDate(bookingDate).setStatus(status).build();
+    return new Booking.Builder().setBookingID(bookingID)
+            .setCustomerID(customerID).setTicketID(ticketID)
+            .setBookingDate(bookingDate).setStatus(status).build();
 
 
     }
