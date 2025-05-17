@@ -105,6 +105,7 @@ public class Booking extends Customer{
         }
 
         public Booking build() {
+            throw new UnsupportedOperationException();
         }
     }
 }
