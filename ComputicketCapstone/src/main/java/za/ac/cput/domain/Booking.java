@@ -66,6 +66,10 @@ public class Booking extends Customer{
             this.status = status;
         }
 
+        public Builder() {
+            
+        }
+
         public Builder setBookingID(String bookingID) {
             this.bookingID = bookingID;
             return this;
@@ -98,6 +102,9 @@ public class Booking extends Customer{
             this.bookingDate = bookingDate;
             this.status = status;
             return this;
+        }
+
+        public Booking build() {
         }
     }
 }
