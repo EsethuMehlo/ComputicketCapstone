@@ -9,7 +9,7 @@ public class Booking extends Customer{
     private LocalDateTime bookingDate  ;
     private String status;
 
-    public Booking() {
+    private Booking() {
     }
 
     private Booking(Builder build) {
@@ -105,7 +105,7 @@ public class Booking extends Customer{
         }
 
         public Booking build() {
-            throw new UnsupportedOperationException();
+            return new Booking(this);
         }
     }
 }

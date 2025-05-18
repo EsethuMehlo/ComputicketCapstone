@@ -2,7 +2,7 @@ package za.ac.cput.util;
 
 public class Helper {
     public static boolean isNullorEmpty(String s){
-        if (s.isEmpty()|| s == null){
+        if (s == null || s.isEmpty()){
             return true;
         }
         return false;
@@ -13,7 +13,7 @@ public class Helper {
         }
         return false;
     }
-    public static boolean isValidEmail(){
+    public static boolean isValidEmail() throws UnsupportedOperationException {
 
         throw new UnsupportedOperationException();
     }
