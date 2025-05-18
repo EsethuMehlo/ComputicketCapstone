@@ -9,8 +9,5 @@
         <module name="ComputicketCapstone" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="ComputicketCapstone" target="19" />
-    </bytecodeTargetLevel>
   </component>
 </project>
