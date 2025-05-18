@@ -3,25 +3,27 @@ package za.ac.cput.domain;
 import java.time.LocalDateTime;
 
 public class Booking extends Customer{
-    private String bookingID;
+    private String bookingId;
     private int customerID;
     private int ticketID;
     private LocalDateTime bookingDate  ;
     private String status;
 
-    private Booking() {
+    public Booking() {
+
     }
 
-    private Booking(Builder build) {
-        this.bookingID = build.bookingID;
+    public Booking( Builder build) {
+        this.bookingId = build.bookingID;
         this.customerID = build.customerID;;
         this.ticketID = build.customerID;
         this.bookingDate = build.bookingDate;
         this.status = build.status;
+
     }
 
-    public String getBookingID() {
-        return bookingID;
+    public String getBookingId() {
+        return bookingId;
     }
 
     public int getCustomerID() {
@@ -43,7 +45,6 @@ public class Booking extends Customer{
     @Override
     public String toString() {
         return "Booking{" +
-                "bookingID=" + bookingID +
                 ", customerID=" + customerID +
                 ", ticketID=" + ticketID +
                 ", bookingDate=" + bookingDate +

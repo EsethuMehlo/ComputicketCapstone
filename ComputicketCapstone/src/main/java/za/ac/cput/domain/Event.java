@@ -17,10 +17,10 @@ public class Event {
         Active,
     }
 
-    public Event() {
+    private Event() {
     }
 
-    public Event(Builder builder) {
+    private Event(Builder builder) {
         this.eventID =  builder.eventID;
         this.eventName =  builder.eventName;
         this.eventDescription =  builder.eventDescription;
