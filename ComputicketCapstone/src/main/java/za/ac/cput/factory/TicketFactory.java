@@ -2,7 +2,7 @@ package za.ac.cput.factory;
 
 public class TicketFactory {
 
-    public void createTicket(eventID) {
+    public void createTicket() {
 
     }
 }
