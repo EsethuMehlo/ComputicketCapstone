@@ -66,6 +66,13 @@ public class Customer extends User{
             return this;
         }
 
+        public Builder copy(Customer customer) {
+            this.user = user;
+            this.contactNumber = contactNumber;
+            this.address = address;
+            return this;
+        }
+
         public Customer build() {
             return new Customer(this);
         }
